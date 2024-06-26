@@ -1,0 +1,52 @@
+body {
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    font-size: 64px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.tic-tac-toe {
+    display: flex;
+    height: 70vh;
+    width: 50vw;
+    justify-content: center;
+    align-items: end;
+}
+
+.gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, calc(60vh/3));
+    grid-template-rows: repeat(3, calc(60vh/3));
+}
+
+.cells {
+    display: flex;
+    border: 1px solid orange;
+    justify-content: center;
+    font-size: small;
+    align-items: center;
+    font-size: 64px;
+    font-family: fantasy;
+}
